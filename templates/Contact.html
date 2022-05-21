@@ -3,69 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yogi contactUs</title>
+    <link rel="stylesheet" href="../static/StyleCSS.css">
+    <script src="../static/JS.js"></script>
 </head>
-<body style="background-image: url('../static/studio3.jpg'); background-repeat: no-repeat; background-size: cover;
-background-position:50% 50%;">
+
+
+<body class="body_contact">
+    <div id="contactPage">
     
-    <nav style="text-align: right; margin-right:5%; margin-top: 3%;">
-    <button onclick="window.location.href='HomePage.html'" style="color: rgb(6, 143, 189); text-align: center; font-family: 'Segoe UI',
-    Tahoma, Geneva, Verdana, sans-serif;">Back To Home Page</button>
-    </nav>
-
-
-    <h1 style="color: lightskyblue; font: bold; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-size: xxx-large; margin-top: -2%; "> Yogi - Yoga Studio </h1>
-    <h3 style="color: rgb(6, 143, 189); text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: larger;
-     padding-bottom: 3%; margin-top: -1%;">
-     Want to start your journy with us? <br> Fill in your details and we will get back to you as soon as possible
-    </h3>
-
-
-    <form action="URL" method="post">
-        <div style="float: left; margin-left:20%; margin-top: 2%; font-size: larger; color:rgb(6, 143, 189); font-family: 'Segoe UI',
-        Tahoma, Geneva, Verdana, sans-serif ; margin-top: -2.5%;">
-        <label  for="First_Name" style="text-align: center;">First Name:</label>
-        <input type="text" id="First_Name" name="First_Name" required><br>
-        
-        <label for="Last_Name" style="text-align: center;margin-right: 0.6%;">Last Name:</label>
-        <input type="text" id="Last_Name" name="Last_Name" required><br>
-       
-        <label  for="Age" style="text-align: center; margin-right: 5.3%;">Your Age:</label>
-        <input type="number" id="Age" name="Age" min="14"><br>
-
-       <label for="Email" style="text-align: center; margin-right:13.8%">E-mail:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label  for="isFirst" style="text-align: center;">First time here?</label>
-        <input type="checkbox" id="isFirst" name="isFirst" ><br>
-
-        </div>   
-
-
-        <div style="float:right; margin-right: 15%; font-size: larger; color: rgb(6, 143, 189); text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
-        sans-serif; margin-top: -4%;">
-        <label for="freeText" style="color: rgb(6, 143, 189); text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
-        sans-serif;">What's on your mind?</label><br>
-        <textarea name="freeText" id="freeText" cols="50" rows="8"></textarea><br>
+        <div class="navbar" id="navbar">
+        <a href="../templates/HomePage.html">Home </a>
+        <a href="../templates/Contact.html">Contact Us</a>
+        <a href="#about">About Us</a>
         </div>
+  
+        <h4 class="mainHome" id="header_contact" > Yogi - Yoga Studio </h4>
+
+        <div class="writerH3">
+            <div id="writerH3" class="mainContact"></div>
+        </div>
+
+        <div class="square"> 
+
+        <h3 id="fill_in_contact" class="mainContact">
+        <br> Fill in your details and we will get back to you as soon as possible
+        </h3>
+ 
+
+        <form action="URL" method="post">
+            <div class="mainContact" id="fill">
+                <label  for="First_Name">First Name:</label>
+                <input type="text" id="First_Name" name="First_Name" required><br>
+            
+                <label id="lastName" for="Last_Name" >Last Name:</label>
+                <input type="text" id="Last_Name" name="Last_Name" required><br>
+        
+                <label id="age" for="Age" >Your Age:</label>
+                <input type="number" id="Age" name="Age" min="14"><br>
+
+                <label id="e-mail" for="Email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label  id="chekbox1" for="isFirst" >First time here?</label>
+                <input type="checkbox" id="isFirst" name="isFirst" ><br>
+
+            </div>   
+
+
+            <div class="mainContact" id="rightText" >
+                <label for="freeText" >What's on your mind?</label><br>
+                <textarea name="freeText" id="freeText" cols="50" rows="8"></textarea><br>
+            </div>
+
        
      
-        <div style="text-align: center; margin-top: 5%;">
-        <input type="submit" style="color: rgb(6, 143, 189); text-align: center; font-family: 'Segoe UI',
-        Tahoma, Geneva, Verdana, sans-serif; float: center; margin-top: 15%;"> <br>
+            <div  class="mainContact" id="div" >
+            <input class="button" id="send" type="submit" ><br>
+            </div>
+
         </div>
-    </form>
-
-    
-  
-
-        
-
-
-
+        </form>
+    </div>
 
 
 

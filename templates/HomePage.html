@@ -5,53 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yogi-Yoga Studio</title>
+    <link rel="stylesheet" href="../static/StyleCSS.css">
+    <script src="../static/JS.js"></script>
 </head>
 
-<body style="background-image: url('../static/studio3.jpg'); background-repeat: no-repeat; background-size: cover;
-background-position:50% 50%;">
+<body class="body_home">
+    <div id="homePage">
+
+        <div class="navbar" id="navbar">
+        <a href="../templates/HomePage.html">Home </a>
+        <a href="../templates/Contact.html">Contact Us</a>
+        <a href="#about">About Us</a>
+        </div>
+ 
+ 
    
-    <h1 style="color: lightskyblue; font: bold; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-size: xxx-large;"> Yogi</h1>
-    <h2 style="color: rgb(28, 91, 133); font: bold; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: x-large; margin-top: -2%; ">
-        Come Take The First Step In Your journy
-    </h2>
-    <img src="../static/image2.jpg" alt="can not display photo" style="margin-left: 42%; border: solid lightblue; width:5cm; height: 5cm;">
+        <h1 class="mainHome" id="header_home" > Yogi</h1>
+        <h2 id="h2_Home" class="mainHome"> 
+        Come Take The First Step In Your journey
+        </h2>
 
 
-    <p style="color: rgb(28, 91, 133); font: bold;text-align: center ; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium; margin-left: 10%; margin-right: 10%; margin-top: 2%;">
-        When you say yoga in Tel Aviv you say yogi. Yogi is a spacious, bright, airy, and relaxed thatprovides a relaxed, open, 
-         and homey feeling. It allows everyone to feel that they can come to invest in themselves, to make room for themselves, to 
-         study themselves. <br> <br>
 
-        We strive to allow anyone who wishes to practice yoga  to find the class that best suits them if it’s the beginner student
-        looking to get familiarised with yoga for the first time or the more advanced student looking to deepen their practice. All 
-        of that in a warm and comfortable homey atmosphere.
+        <p id="description" class="mainHome">
+            When you say yoga in Tel Aviv you say Yogi. Yogi is a spacious, bright, airy, and relaxed studio that provides an intimate
+            and profesional environment. It allows you to preceed in your personal journey towards fitness and physical and mental strength.
+             <br> <br>
+
+            We strive to allow anyone who wishes to practice yoga to find the class that best suits them if it’s the beginner student
+            looking to get familiarised with yoga for the first time or the more advanced student looking to deepen their practice. All 
+            of this in a warm and comfortable homey atmosphere.<br> <br>
+
+            Our Teachers:
+        </p>
+
         
-    </p>
-
-    <div style="text-align: center;color: rgb(202, 229, 238); font: bold;text-align: center ; font-family: 'Segoe UI',
-     Tahoma, Geneva, Verdana, sans-serif;font-size: medium; margin-top: 3%;">
-    <b><p  style="font-size: larger; ">convinced? 
-    </p>
-
-    <p style="margin-top: -1.5%;">
-        Press here and we will set your first class
-    </p></b>
+        <div class="changeImage">
+            <img id="changedImage" src="../static/teacher1.jpg" onclick="ReplaceImage()" alt="Error"/>
+        </div>
+        
+        <nav class="button">
+        <button class="button" onclick="window.location.href='Contact.html'" >Contact Us</button>
+        </nav>
     </div>
-
-    <nav style="text-align: center">
-    <button onclick="window.location.href='Contact.html'" style="color: rgb(6, 143, 189); text-align: center; font-family: 'Segoe UI',
-    Tahoma, Geneva, Verdana, sans-serif;">Contact Us</button>
-    </nav>
-
-
-
-
-  
-
-
-
 </body>
 </html>
